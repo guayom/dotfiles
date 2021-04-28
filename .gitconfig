@@ -12,7 +12,7 @@
 	comp = !git checkout master && git pull
 	cp = cherry-pick
 	pf = push --force
-	resync = "!git fetch origin && git reset --hard origin/master && git clean -f -d"
+	resync = !git fetch origin && git reset --hard origin/master && git clean -f -d
 	rh = reset --hard
 	rm = rebase master
 	sl = log --pretty=\"%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s\" --date=short
