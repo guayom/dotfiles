@@ -1,0 +1,21 @@
+[user]
+	name = guayom
+	email = guayo.mena@gmail.com
+
+[alias]
+	br = branch
+	ci = commit
+	ca = commit --amend
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	comp = !git checkout master && git pull
+	cp = cherry-pick
+	pf = push --force
+	resync = "!git fetch origin && git reset --hard origin/master && git clean -f -d"
+	rh = reset --hard
+	rm = rebase master
+	sl = log --pretty=\"%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s\" --date=short
+	slm = log --pretty=\"%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s\" --date=short --author=\"Guayo Mena\"
+	st = status
+	ul = reset --soft HEAD~1
