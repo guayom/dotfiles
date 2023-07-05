@@ -1,5 +1,5 @@
 [user]
-	name = guayom
+	name = Guayo Mena
 	email = guayo.mena@gmail.com
 
 [alias]
@@ -19,3 +19,18 @@
 	slm = log --pretty=\"%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s\" --date=short --author=\"Guayo Mena\"
 	st = status
 	ul = reset --soft HEAD~1
+[core]
+	excludesfile = /Users/guayoph/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/guayoph/.stCommitMsg
+[credential]
+	helper = cache
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
